@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Biscuit & Egg Sandwich",
+    "type": "Sandwich",
+    "price": 9.50,
+    "detail": "Two eggs soft scrambled served on a housemade biscuit served with tomato salad.",
+    "image": "images/Biscuit & Egg.png"
+  },
+  {
+    "name": "Bread & Butter",
+    "type": "Other",
+    "price": 6.00,
+    "detail": "Toasted housemade bread served with butter and housemade jam.",
+    "image": "images/Bread & Butter.png"
+  },
+  {
+    "name": "Breakfast Sandwich",
+    "type": "Sandwich",
+    "price": 9.85,
+    "detail": "Eggs your style, Vermont cheddar, and applewood smoked bacon on housemade sourdough.",
+    "image": "images/Breakfast Sandwich.png"
+  },
+  {
+    "name": "Croissant Breakfast Sandwich",
+    "type": "Sandwich",
+    "price": 11.25,
+    "detail": "Egg your style, Vermont cheddar, sliced tomato, avocado, and baby arugula on housemade croissant.",
+    "image": "images/Croissant Breakfast Sandwich.png"
+  },
+  {
+    "name": "Croque Madame",
+    "type": "Other",
+    "price": 13.85,
+    "detail": "Housemade croissant, ham, Gruyere, egg your style, and Mornay sauce.",
+    "image": "images/Croque Madame.png"
+  },
+  {
+    "name": "Croque Monsieur",
+    "type": "Other",
+    "price": 12.85,
+    "detail": "Housemade croissant, ham, Gruyere and Mornay sauce.",
+    "image": "images/Croque Monsieur.png"
+  },
+  {
+    "name": "Crunchy Halloumi Salad",
+    "type": "Salad",
+    "price": 14.50,
+    "detail": "Bibb & red leaf lettuce, seared halloumi cheese, roasted carrots with sesame, raisins, radish, apples, and crunchy almonds in a tahini vinaigrette.",
+    "image": "images/Crunchy Halloumi Salad.png"
+  },
+  {
+    "name": "Fattoush Salad",
+    "type": "Salad",
+    "price": 12.50,
+    "detail": "Bibb and red leaf lettuce, tomato, cucumber, red pepper, onion, kalamata olives, sunflower seeds, and feta in a lemon-olive oil dressing with za'atar croutons.",
+    "image": "images/Fattoush Salad.png"
+  },
+  {
+    "name": "Green & Nutty Salad",
+    "type": "Salad",
+    "price": 13.50,
+    "detail": "Bibb & red leaf lettuce, baby arugula, apples, black sesame, edamame, dried apricot, and toasted sunflower and pumpkin seeds topped with goat cheese in an orange vinaigrette.",
+    "image": "images/Green & Nutty Salad.png"
+  },
+  {
+    "name": "Halloumi & Sunny-Side Breakfast Sandwich",
+    "type": "Sandwich",
+    "price": 9.85,
+    "detail": "Seared halloumi cheese, griddled tomatoes, and sautéed spinach with a sunny-side up egg on our house-made challah roll.",
+    "image": "images/Halloumi.png"
+  },
+  {
+    "name": "Lamb Hash",
+    "type": "Other",
+    "price": 15.00,
+    "detail": "Our own version of Hash! Lamb cooked with warm spices sautéed with potatoes, sweet potatoes, carrots, pickled red cabbage, and then topped with a poached egg and green dressing. Served with roasted garlic labneh, tomato salad and our housemade challah.",
+    "image": "images/Lamb Hash.png"
+  },
+  {
+    "name": "Lamb Meatball & Labneh Shakshuka",
+    "type": "Shakshuka",
+    "price": 15.00,
+    "detail": "Tomato and bell pepper sauce, eggs, lamb meatballs, and peppadew peppers topped with spicy labneh and parsley. Served with housemade challah bread.",
+    "image": "images/Lamb Meatball & Labneh Shakshuka.png"
+  },
+  {
+    "name": "Maple, Squash & Chicken Salad",
+    "type": "Salad",
+    "price": 14.85,
+    "detail": "Mixed greens, baby kale, roasted acorn squash, carrots, and roasted chicken breast topped with toasted almonds and dried cranberries served with maple labneh dressing.",
+    "image": "images/Maple, Squash & Chicken Salad.png"
+  },
+  {
+    "name": "Muesli",
+    "type": "Other",
+    "price": 7.00,
+    "detail": "Whipped Greek yogurt topped with housemade granola, raspberries, blueberries, blackberries, pear, apple, honey, and black sesame. ",
+    "image": "images/Muesli.png"
+  },
+  {
+    "name": "Potato, Mushroom, & Bacon Shakshuka",
+    "type": "Shakshuka",
+    "price": 14.50,
+    "detail": "Potato sauce, baby spinach, shiitake, and button mushrooms, poached egg topped with bacon, parsley relish, garlic Aleppo oil, grated parmesan, and fresh parsley served with housemade sourdough.",
+    "image": "images/Potato, Mushroom, & Bacon Shakshuka.png"
+  },
+  {
+    "name": "Prosciutto & Parmesan Scrambled Egg Plate",
+    "type": "Other",
+    "price": 10.00,
+    "detail": "Two eggs soft scrambled served with prosciutto, Parmesan and toasted housemade sourdough. ",
+    "image": "images/Prosciutto & Parmesan.png"
+  },
+  {
+    "name": "Roasted Pear, Granola & Labneh",
+    "type": "Other",
+    "price": 9.50,
+    "detail": "Roasted pears served with housemade granola, labneh, and VT maple syrup.",
+    "image": "images/Roasted Pear, Granola & Labneh.png"
+  },
+  {
+    "name": "Smoked Salmon, Avocado, & Egg Sandwich",
+    "type": "Sandwich",
+    "price": 12.50,
+    "detail": "Smoked salmon, avocado, red onion, capers, alfalfa sprouts, and creamy scrambled eggs served on a housemade challah roll with green herbed dressing.",
+    "image": "images/Smoked Salmon.png"
+  },
+  {
+    "name": "Spinach, Sunchoke & Egg Plate",
+    "type": "Other",
+    "price": 11.50,
+    "detail": "Sauteed spinach, roasted sunchokes, and poached egg served over garlic labneh and topped with Aleppo chili oil. Served with housemade sourdough. ",
+    "image": "images/Spinach, Sunchoke & Egg Plate.png"
+  },
+  {
+    "name": "Tomato & Goat Cheese Scrambled Egg Plate",
+    "type": "Other",
+    "price": 10.00,
+    "detail": "Two eggs soft scrambled served with ricotta goat cheese mousse and sun-dried cherry tomatoes marinated in garlic and olive oil served with toasted housemade sourdough. You can add on sautéed spinach.",
+    "image": "images/Tomato & Goat Cheese.png"
+  },
+  {
+    "name": "Traditional Shakshuka",
+    "type": "Shakshuka",
+    "price": 14.00,
+    "detail": "Traditional North African dish of eggs poached in a tomato sauce with chili, bell peppers, and onions spiced with cumin and topped with feta and parsley. Served with housemade challah bread.",
+    "image": "images/Traditional Shakshuka.png"
+  }
+]
