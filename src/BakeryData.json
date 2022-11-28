@@ -51,7 +51,7 @@
   {
     "name": "Fattoush Salad",
     "type": "Salad",
-    "price": 12.50,
+    "price": 9.50,
     "detail": "Bibb and red leaf lettuce, tomato, cucumber, red pepper, onion, kalamata olives, sunflower seeds, and feta in a lemon-olive oil dressing with za'atar croutons.",
     "image": "images/Fattoush Salad.png"
   },
@@ -142,7 +142,7 @@
   {
     "name": "Traditional Shakshuka",
     "type": "Shakshuka",
-    "price": 14.00,
+    "price": 10.00,
     "detail": "Traditional North African dish of eggs poached in a tomato sauce with chili, bell peppers, and onions spiced with cumin and topped with feta and parsley. Served with housemade challah bread.",
     "image": "images/Traditional Shakshuka.png"
   }

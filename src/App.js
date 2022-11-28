@@ -9,12 +9,13 @@ import {useState} from "react";
 
 function App() {
     const [type, setType] = useState("All");
+    const [plimit, setPlimit] = useState(-1);
     const [cart, setCart] = useState(new Map());
     const [price, setPrice] = useState(0);
     const [sorted, setSorted] = useState(false);
 
     const matchesFilterType = item => {
-        return (type === "All") || (type === item.type);
+        return ((type === "All") || (type === item.type)) && ((plimit >= item.price) || (plimit === -1))
     }
 
     const changeSortWay = (a, b) => {
@@ -61,18 +62,23 @@ function App() {
                   <ShoppingCart cart={cart} price={price} setCart={setCart} setPrice={setPrice}/>
               </Drawer>
               <div>
-                  <Typography variant="h1" align="center">Tatte Bakery</Typography>
-                  <Typography variant="h5" className="grey-text" align="center">Fake :)</Typography>
-                  <SelectBar setType={setType}/>
                   <div className="justify-content-center">
-                      {!sorted && <Button onClick={handleSort}>Sort by Price</Button>}
-                      {sorted && <Button onClick={handleUnsort}>Unsorted</Button>}
+                      <Typography variant="h1" align="center">Tatte Bakery</Typography>
+                      <Typography variant="h5" className="grey-text">Fake :)</Typography>
+                      <SelectBar setType={setType} setPlimit={setPlimit}/>
+                      <div>
+                          {!sorted && <Button onClick={handleSort}>Sort by Price</Button>}
+                          {sorted && <Button onClick={handleUnsort}>Unsorted</Button>}
+                      </div>
                   </div>
-                  <Grid container spacing={2}>
-                      {
-                          bakerydata.sort(changeSortWay).filter(matchesFilterType).map((item, index) => <Grid item xs={4}><BakeryItem item={item} setCart={setCart} setPrice={setPrice}/></Grid>)
-                      }
-                  </Grid>
+                  <div>
+                      <Grid container spacing={2}>
+                          {
+                              bakerydata.sort(changeSortWay).filter(matchesFilterType).map((item, index) => <Grid item xs={4}><BakeryItem item={item} setCart={setCart} setPrice={setPrice}/></Grid>)
+                          }
+                      </Grid>
+                  </div>
+
                   {/*<Grid container spacing={2}>*/}
                   {/*    {*/}
                   {/*        bakerydataToDisplay.filter(matchesFilterType).map((item, index) => <Grid item xs={4}><BakeryItem item={item} setCart={setCart} setPrice={setPrice}/></Grid>)*/}
