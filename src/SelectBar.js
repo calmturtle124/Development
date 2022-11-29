@@ -8,10 +8,13 @@ function SelectBar(props) {
     }
     const selectFilterPrice = eventKey => {
         if (eventKey === "All") {
-            setPlimit(-1);
+            setPlimit([]);
+        }
+        else if (eventKey === "5to10") {
+            setPlimit([5, 10]);
         }
         else {
-            setPlimit(10);
+            setPlimit([10, 100]);
         }
     }
     // const selectFilterPriceAll = e => {
@@ -52,7 +55,10 @@ function SelectBar(props) {
                     <Nav.Link eventKey="All">All Price</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="10">Price less than $10</Nav.Link>
+                    <Nav.Link eventKey="5to10">Price $5 - $10</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link eventKey="morethan10">Price >= $10</Nav.Link>
                 </Nav.Item>
             </Nav>
             <Nav variant="tabs" className="justify-content-center" onSelect={selectFilterType}>

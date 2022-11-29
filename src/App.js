@@ -9,13 +9,13 @@ import {useState} from "react";
 
 function App() {
     const [type, setType] = useState("All");
-    const [plimit, setPlimit] = useState(-1);
+    const [plimit, setPlimit] = useState([]);
     const [cart, setCart] = useState(new Map());
     const [price, setPrice] = useState(0);
     const [sorted, setSorted] = useState(false);
 
     const matchesFilterType = item => {
-        return ((type === "All") || (type === item.type)) && ((plimit >= item.price) || (plimit === -1))
+        return ((type === "All") || (type === item.type)) && (((plimit[0] <= item.price) && (plimit[1] > item.price)) || (plimit.length === 0))
     }
 
     const changeSortWay = (a, b) => {
@@ -62,13 +62,13 @@ function App() {
                   <ShoppingCart cart={cart} price={price} setCart={setCart} setPrice={setPrice}/>
               </Drawer>
               <div>
-                  <div className="justify-content-center">
+                  <div>
                       <Typography variant="h1" align="center">Tatte Bakery</Typography>
-                      <Typography variant="h5" className="grey-text">Fake :)</Typography>
+                      <Typography variant="h5" className="grey-text" align="center">Fake :)</Typography>
                       <SelectBar setType={setType} setPlimit={setPlimit}/>
                       <div>
-                          {!sorted && <Button onClick={handleSort}>Sort by Price</Button>}
-                          {sorted && <Button onClick={handleUnsort}>Unsorted</Button>}
+                          {!sorted && <div><Button onClick={handleSort}>Sort by Price</Button> Now items are unsorted </div>}
+                          {sorted && <div><Button onClick={handleUnsort}>Unsorted</Button> Now items are sorted</div>}
                       </div>
                   </div>
                   <div>

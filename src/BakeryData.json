@@ -2,7 +2,7 @@
   {
     "name": "Biscuit & Egg Sandwich",
     "type": "Sandwich",
-    "price": 9.50,
+    "price": 9.85,
     "detail": "Two eggs soft scrambled served on a housemade biscuit served with tomato salad.",
     "image": "images/Biscuit & Egg.png"
   },
@@ -16,7 +16,7 @@
   {
     "name": "Breakfast Sandwich",
     "type": "Sandwich",
-    "price": 9.85,
+    "price": 9.50,
     "detail": "Eggs your style, Vermont cheddar, and applewood smoked bacon on housemade sourdough.",
     "image": "images/Breakfast Sandwich.png"
   },
