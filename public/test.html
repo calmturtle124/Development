@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <title>Test</title>
+    <script>
+        function randomHeight() {
+            let ele = document.getElementById("root").getElementsByClassName("col");
+            for (let i = 0; i < ele.length; i++) {
+                let h = Math.floor(Math.random() * 100) + 1 + "px";
+                ele[i].style.height = h;
+            }
+        }
+    </script>
+
+<!--    <script>-->
+<!--        let ele = document.getElementsByClassName("display-4 mt-2 mb-4");-->
+<!--        let ob = {};-->
+<!--        for (let i = 0; i < ele.length; i++) {-->
+<!--            let prop = ele[i].firstChild.innerText; // -->
+<!--            ob[prop] = ele[i].nextElementSibling.childElementCount;-->
+<!--        }-->
+<!--        console.log(ob);-->
+<!--    </script>-->
+
+
+</head>
+<body>
+
+<!--in the body-->
+<div id="root">
+    <div class="row">
+        <div class="col center border margin" draggable="true">a</div>
+        <div class="col center border margin" draggable="true">a</div>
+        <div class="col center border margin" draggable="true">a</div>
+    </div>
+    <div class="row">
+        <div class="col center border margin" draggable="true">b</div>
+        <div class="col center border margin" draggable="true">b</div>
+        <div class="col center border margin" draggable="true">b</div>
+    </div>
+    <div class="row">
+        <div class="col center border margin" draggable="true">c</div>
+        <div class="col center border margin" draggable="true">c</div>
+        <div class="col center border margin" draggable="true">c</div>
+    </div>
+    <button onclick="randomHeight()">assign random height</button>
+
+    <script>
+        function handleDragStart(e) {
+            console.log("?");
+            this.style.opacity = '0.4';
+        }
+
+        function handleDragEnd(e) {
+            this.style.opacity = '1';
+        }
+
+        let items = document.querySelectorAll('.root .row .col');
+        items.forEach(function (item) {
+            item.addEventListener('dragstart', handleDragStart);
+            item.addEventListener('dragend', handleDragEnd);
+        });
+    </script>
+</div>
+
+
+</body>
+</html>
