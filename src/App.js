@@ -187,19 +187,24 @@ function App() {
                                 </div>
                                 <ul>
                                     <li>
-                                        type: Type of items that currently should be displayed.
+                                        <span className="text-dark">type: </span>
+                                        Type of items that currently should be displayed.
                                     </li>
                                     <li>
-                                        plimit: Price limit on items that currently should be displayed.
+                                        <span className="text-dark">plimit: </span>
+                                        Price limit on items that currently should be displayed.
                                     </li>
                                     <li>
-                                        cart: All items in the cart currently.
+                                        <span className="text-dark">cart: </span>
+                                        All items in the cart currently.
                                     </li>
                                     <li>
-                                        price: The total price of items in the cart currently.
+                                        <span className="text-dark">price: </span>
+                                        The total price of items in the cart currently.
                                     </li>
                                     <li>
-                                        sorted: Whether the current items should be sorted And each of them has a corresponding set method.
+                                        <span className="text-dark">sorted: </span>
+                                        Whether the current items should be sorted And each of them has a corresponding set method.
                                     </li>
                                 </ul>
                             </div>
