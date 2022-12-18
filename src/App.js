@@ -144,16 +144,20 @@ function App() {
                         <div className="fw-light fs-5 text-secondary">
                             <ul>
                                 <li>
-                                    (User control) Users have control over the cart and items: They can both add or remove items to the cart, they can apply and unapply sorting, and they can select and unselect (select other) item types for the gallery.
+                                    <span className="text-dark">(User control)</span>
+                                    Users have control over the cart and items: They can both add or remove items to the cart, they can apply and unapply sorting, and they can select and unselect (select other) item types for the gallery.
                                 </li>
                                 <li>
-                                    (Consistency) The format of all tabs are same, the format of all items in the gallery are same, and the format of all items in the cart are same.
+                                    <span className="text-dark">(Consistency)</span>
+                                     The format of all tabs are same, the format of all items in the gallery are same, and the format of all items in the cart are same.
                                 </li>
                                 <li>
-                                    (Recognition) The cart and its showing items are always at the left of the screen, the vertical scroll will only affect the gallery, not the cart, so the user can always see what is in the cart and make decisions based on that.
+                                    <span className="text-dark">(Recognition)</span>
+                                    The cart and its showing items are always at the left of the screen, the vertical scroll will only affect the gallery, not the cart, so the user can always see what is in the cart and make decisions based on that.
                                 </li>
                                 <li>
-                                    (Minimalist design) The page only shows the necessary information, there is no irrelevant information.
+                                    <span className="text-dark">(Minimalist design)</span>
+                                    The page only shows the necessary information, there is no irrelevant information.
                                 </li>
                             </ul>
 
@@ -178,10 +182,43 @@ function App() {
                         </div>
                         <div className="fw-light fs-5 text-secondary">
                             <div className="pb-4">
-                                The App maintains 5 userState: type: Type of items that currently should be displayed plimit: Price limit on items that currently should be displayed cart: All items in the cart currently price: The total price of items in the cart currently sorted: Whether the current items should be sorted And each of them has a corresponding set method.
+                                <div>
+                                    The App maintains 5 userState:
+                                </div>
+                                <ul>
+                                    <li>
+                                        type: Type of items that currently should be displayed.
+                                    </li>
+                                    <li>
+                                        plimit: Price limit on items that currently should be displayed.
+                                    </li>
+                                    <li>
+                                        cart: All items in the cart currently.
+                                    </li>
+                                    <li>
+                                        price: The total price of items in the cart currently.
+                                    </li>
+                                    <li>
+                                        sorted: Whether the current items should be sorted And each of them has a corresponding set method.
+                                    </li>
+                                </ul>
                             </div>
                             <div>
-                                cart and setCart, price and setPrice have been passed to the ShoppingCart component, since it is responsible for showing the cart and the price, and changing them when the user removes items. setType and setPlimit have been passed to the SelectBar, since it is responsible for updating the type when the user selects a type or/and the price limit. setPrice and setCart has been passed to the BakeryItem component, since it is responsible for changing the cart and the price when the user adds items. Also, the element of the bakery data list is also passed into it, since it is responsible for showing the information (name, image, type...) of the element.
+                                <div>
+                                    cart and setCart, price and setPrice have been passed to the ShoppingCart component,
+                                    since it is responsible for showing the cart and the price, and changing them when the user removes items.
+                                </div>
+                                <div>
+                                    setType and setPlimit have been passed to the SelectBar, since it is responsible for updating the type when the
+                                    user selects a type or/and the price limit.
+                                </div>
+                                <div>
+                                    setPrice and setCart has been passed to the BakeryItem component,
+                                    since it is responsible for changing the cart and the price when the user adds items. Also, the element of the
+                                    bakery data list is also passed into it, since it is responsible for showing the information
+                                    (name, image, type...) of the element.
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -191,7 +228,35 @@ function App() {
                             How the User Triggers State Changes
                         </div>
                         <div className="fw-light fs-5 text-secondary">
-                            type: the type state is a String. Users can select the type they want by the type nav bar. For example, if they select the "All" type, the type state will be set to "All”. plimit: the plimit state is a list of Number. Users can select the price limit they want by the limit nav bar. Since the range of the price of bakery items is narrow, there are only 3 options for now: If they select “All price”, there is no limit of price on showing items. If they select “Price $5 - $10”, only items with a price in the range [5, 10) would be shown. If they select “Price >= $10”, only items with a price larger or equal than 10 would be shown. cart: the cart state is a Map. Users can add or remove items from the cart. The adding button is in the BakeryItem component, and the removing button is in the ShoppingCart component itself. If the user adds an item, a new Map will be generated, which is exactly the same except that item is added to it. If the user removes an item, a new Map will be generated, which is exactly the same except that item is removed from it. The new Map will be set as the new cart state. price: the price state is a Number. price is completely related to the cart state. If the user adds an item to the cart, the new price state will be the old price + that item's price; if the user removes an item from the cart, the new price state will be the old price - that item's price. sorted: the sorted state is a Boolean. If the user clicks the sort button, the sorted state will become "true"; if the user clicks the button again (now the button at the same position is the unsorted button), the sorted state will become "false".
+                            <ul>
+                                <li className="pb-4">
+                                    <span className="text-dark">type:</span> the type state is a String. Users can select the type they want by the type nav bar. For example, if they select the "All" type, the type state will be set to "All”.
+                                </li>
+                                <li className="pb-4">
+                                    <span className="text-dark">plimit:</span> the plimit state is a list of Number. Users can select the price limit they want by the limit nav bar. Since the range of the price of bakery items is narrow, there are only 3 options for now:
+                                    If they select “All price”, there is no limit of price on showing items. If they select
+                                    “Price $5 - $10”, only items with a price in the range [5, 10) would be shown.
+                                    If they select “Price >= $10”, only items with a price larger or equal than 10 would be
+                                    shown.
+                                </li>
+                                <li className="pb-4">
+                                    <span className="text-dark">cart:</span> the cart state is a Map. Users can add or remove items from the cart. The adding button is in the BakeryItem component, and the removing button is in the ShoppingCart
+                                    component itself. If the user adds an item, a new Map will be generated, which is exactly the
+                                    same except that item is added to it. If the user removes an item, a new Map will be generated,
+                                    which is exactly the same except that item is removed from it. The new Map will be set as the new cart state.
+                                </li>
+                                <li className="pb-4">
+                                    <span className="text-dark">price:</span> the price state is a Number. price is completely related to the cart state.
+                                    If the user adds an item to the cart, the new price state will be the old price + that item's
+                                    price; if the user removes an item from the cart, the new price state will be the old price - that item's
+                                    price.
+                                </li>
+                                <li>
+                                    <span className="text-dark">sorted:</span> the sorted state is a Boolean. If the user clicks the sort button, the sorted state will become "true";
+                                    if the user clicks the button again (now the button at the same position is the unsorted button), the sorted state
+                                    will become "false".
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
